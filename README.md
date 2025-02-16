@@ -3,6 +3,7 @@
 A comprehensive end-to-end project demonstrating how to build, evaluate, and deploy a Machine Learning model for spam detection using Flask. This repository includes data preprocessing, multiple model evaluations, and deployment.
 
 ## Table of Contents
+-- [Screenshots]
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Data Preprocessing & Exploration](#data-preprocessing--exploration)
@@ -13,6 +14,10 @@ A comprehensive end-to-end project demonstrating how to build, evaluate, and dep
 - [Detailed Steps](#detailed-steps)
 - [Future Improvements](#future-improvements)
 - [License](#license)
+## ScreenShots
+![image](https://github.com/user-attachments/assets/fa5eddb4-727c-461f-b6fb-7882376a515a)
+![image](https://github.com/user-attachments/assets/60d0e8a1-e281-40b7-a310-30570cec835b)
+![image](https://github.com/user-attachments/assets/ed493f66-b159-463a-9932-19da8422545b)
 
 ## Project Overview
 This project classifies emails as spam or non-spam (ham). It begins with loading and exploring the dataset, followed by feature engineering, training multiple machine learning models, and finally deploying the chosen model.
@@ -23,17 +28,16 @@ This project classifies emails as spam or non-spam (ham). It begins with loading
 - A Flask application serves predictions via a simple web interface (index.html).
 
 ## Dataset
-The dataset (e.g., `spam_data.pkl` or CSV files) contains a collection of emails labeled as spam (1) or ham (0). It’s typically imbalanced, with more non-spam emails than spam.
+The dataset  contains a collection of emails labeled as spam (1) or ham (0). It’s typically imbalanced, with more non-spam emails than spam.
 
 ### Key Points:
 - **Number of Spam Emails**: ~2,115
 - **Number of Non-Spam Emails**: ~9,185
 - **Imbalance**: ~4:1 ratio (ham:spam)
-- **Why This Matters**: An imbalanced dataset can bias models toward predicting the majority class (non-spam). Techniques such as resampling or class weighting may be applied if necessary.
 
 ## Data Preprocessing & Exploration
 - **Loading Data**: The raw data is read from a CSV file or from `spam_data.pkl`.
-- **Cleaning & Tokenization**: Common steps include lowercasing text, removing punctuation, and optionally removing stopwords.
+- **Cleaning & Tokenization**:  include lowercasing text, removing punctuation, and optionally removing stopwords.
 - **Exploratory Data Analysis (EDA)**: Check class distribution and visualize common words.
 - **Feature Extraction**: A `CountVectorizer` (saved as `countvectorizer.pkl`) transforms email text into numeric vectors.
 
@@ -47,7 +51,7 @@ Multiple machine learning models were trained and evaluated on a training set, t
 
 ### Performance Metrics
 - **Accuracy** for quick comparison.
-- Additional metrics like precision, recall, and F1-score can provide deeper insight, especially for imbalanced data.
+- Additional metrics like precision, recall, and F1-score was also  applied to  provide deeper insight, especially for imbalanced data.
 
 #### Approximate Accuracy Results:
 - **Naive Bayes**: 94.66%
@@ -80,8 +84,8 @@ ML_DEPLOYMENT/
 ```
 
 ### Folder Descriptions:
-- **models/**: Stores serialized models (.pkl files) and possibly the dataset if saved as a pickle.
-- **static/**: Holds images, CSS, or JavaScript files for the web interface.
+- **models/**: Stores serialized models (.pkl files) .
+- **static/**: Holds images, CSS,.
 - **templates/**: Flask’s default folder for HTML templates.
 - **app.py**: Entry point for the Flask app.
 - **utils.py**: Helper module for loading the model, preprocessing text, or making predictions.
@@ -91,7 +95,7 @@ ML_DEPLOYMENT/
 
 ### 1. Clone or Download this repository.
 ```bash
-git clone https://github.com/your_username/spam_email_detection.git
+git clone https://github.com/ZyadFri/spam_email_detection.git
 cd spam_email_detection
 ```
 
@@ -132,7 +136,5 @@ http://127.0.0.1:5000
 - Use more sophisticated ensemble models.
 - Enhance the web interface with better UI/UX.
 - Deploy the model to a cloud platform.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+.
 
