@@ -3,7 +3,7 @@
 A comprehensive end-to-end project demonstrating how to build, evaluate, and deploy a Machine Learning model for spam detection using Flask. This repository includes data preprocessing, multiple model evaluations, and deployment.
 
 ## Table of Contents
--- [Screenshots]
+- [Screenshots]
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Data Preprocessing & Exploration](#data-preprocessing--exploration)
